@@ -1,0 +1,16 @@
+# Database
+db.sqlite3
+
+# OpenAI Key text file and secret key text file
+openai_key.txt
+SECRET_KEY.txt
+
+#python cache
+*/__pycache__
+*/__init__.py
+
+#django migrations cache
+*/migrations
+
+# Virtualenv
+/virtualenv
