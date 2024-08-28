@@ -79,9 +79,9 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 # add the message to the chunks list
                 chunks.append(message_chunk)
 
-        # when done, add the system message to our message list
+        # when done, add the assistant message to our message list
         self.messages.append({
-            "role": "system",
+            "role": "assistant",
             "content": "".join(chunks)
         })
         print("Messages:", self.messages)
